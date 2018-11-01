@@ -8,12 +8,48 @@
         tools:context=".MainActivity">
 
     <TextView
+            android:text="Living"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/textViewLiving"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
+    />
+    <TextView
+            android:text="Sleeping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSleeping" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLiving" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="Child"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:id="@+id/textViewChild" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSleeping"/>
+    <TextView
+            android:text="23"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLivingValue" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintBaseline_toBaselineOf="@+id/textViewLiving"
+            android:textAlignment="textEnd"/>
+    <TextView
+            android:text="18"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSleepingValue"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewSleeping" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:textAlignment="textEnd"/>
+    <TextView
+            android:text="20"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewChildValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintBaseline_toBaselineOf="@+id/textViewChild"
+            android:textAlignment="textEnd"/>
 
 </android.support.constraint.ConstraintLayout>
